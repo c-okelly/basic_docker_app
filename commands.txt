@@ -1,0 +1,21 @@
+# Build image and tag as latest
+docker build -t simple-flask-app:latest .
+
+# Run image
+docker run -p 8000:5000 simple-flask-app
+
+
+# How docker compose works
+version
+services => general
+create a service
+build vs pull image
+
+Mention networking / connecting other images
+running in swarm vs single cluster
+
+# Run docker compose
+docker-compose up
+
+# .env files
+# Doesn't work in swarm
